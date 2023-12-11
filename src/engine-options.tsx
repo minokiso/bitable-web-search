@@ -1,87 +1,56 @@
 import { GoogleOutlined, QuestionCircleOutlined, SearchOutlined, WeiboCircleOutlined, ZhihuOutlined } from "@ant-design/icons";
-import { Space } from "antd";
 
-export const engineOptions = [
-	{
-		value: "https://www.baidu.com/s?wd=",
-		label: (
-			<Space>
-				<svg className="icon" aria-hidden="true">
-					<use xlinkHref="#icon-baidu"></use>
-				</svg>
-				百度
-			</Space>
+export const engineMap: any = {
+	"https://www.baidu.com/s?wd=": {
+		avatar: (
+			<svg className="icon" aria-hidden="true">
+				<use xlinkHref="#icon-baidu"></use>
+			</svg>
 		),
+		name: "百度",
 	},
-	{
-		value: "https://www.bing.com/search?q=",
-		label: (
-			<Space>
-				<svg className="icon" aria-hidden="true">
-					<use xlinkHref="#icon-bing"></use>
-				</svg>
-				必应
-			</Space>
+	"https://www.bing.com/search?q=": {
+		avatar: (
+			<svg className="icon" aria-hidden="true">
+				<use xlinkHref="#icon-bing"></use>
+			</svg>
 		),
+		name: "必应",
 	},
-	{
-		value: "https://www.google.com/search?q=",
-		label: (
-			<Space>
-				<GoogleOutlined />
-				谷歌
-			</Space>
+	"https://www.google.com/search?q=": {
+		avatar: <GoogleOutlined />,
+		name: "必应",
+	},
+	"https://www.zhihu.com/search?q=": {
+		avatar: <ZhihuOutlined />,
+		name: "知乎",
+	},
+	"https://search.bilibili.com/all?keyword=": {
+		avatar: (
+			<svg className="icon" aria-hidden="true">
+				<use xlinkHref="#icon-icon_bilibili-square"></use>
+			</svg>
 		),
+		name: "B 站",
 	},
-	{
-		value: "https://www.zhihu.com/search?q=",
-		label: (
-			<Space>
-				<ZhihuOutlined />
-				知乎
-			</Space>
+	"https://s.weibo.com/weibo?q=": {
+		avatar: <WeiboCircleOutlined />,
+		name: "微博",
+	},
+	"https://www.douyin.com/search/": {
+		avatar: (
+			<svg className="icon" aria-hidden="true">
+				<use xlinkHref="#icon-icon_douyin"></use>
+			</svg>
 		),
+		name: "抖音",
 	},
-	{
-		value: "https://search.bilibili.com/all?keyword=",
-		label: (
-			<Space>
-				<svg className="icon" aria-hidden="true">
-					<use xlinkHref="#icon-icon_bilibili-square"></use>
-				</svg>
-				B 站
-			</Space>
+	"https://www.xiaohongshu.com/search_result?keyword=": {
+		avatar: (
+			<svg className="icon" aria-hidden="true">
+				<use xlinkHref="#icon-shiliangzhinengduixiang2-01"></use>
+			</svg>
 		),
+		name: "小红书",
 	},
-	{
-		value: "https://s.weibo.com/weibo?q=",
-		label: (
-			<Space>
-				<WeiboCircleOutlined />
-				微博
-			</Space>
-		),
-	},
-	{
-		value: "https://www.douyin.com/search/",
-		label: (
-			<Space>
-				<svg className="icon" aria-hidden="true">
-					<use xlinkHref="#icon-icon_douyin"></use>
-				</svg>
-				抖音
-			</Space>
-		),
-	},
-	{
-		value: "https://www.xiaohongshu.com/search_result?keyword=",
-		label: (
-			<Space>
-				<svg className="icon" aria-hidden="true">
-					<use xlinkHref="#icon-shiliangzhinengduixiang2-01"></use>
-				</svg>
-				小红书
-			</Space>
-		),
-	},
-];
+};
